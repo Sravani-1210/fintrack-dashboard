@@ -43,14 +43,17 @@ A modern and responsive personal finance dashboard built with React and Vite. Ma
 
 ## 📸 Screenshots
 
-### Dashboard
+### 🖥️ Dashboard
 
-(Add dashboard screenshot here)
+![Dashboard](public/desktop_view.png)
 
-### Mobile View
+### 📱 Mobile View
 
-(Add mobile screenshot here)
+![Mobile View](public/mobile_view1.png)
 
+### 📱 Mobile View 2
+
+![Mobile View 2](public/mobile_view2.png)
 ---
 
 ## ⚙ Installation
