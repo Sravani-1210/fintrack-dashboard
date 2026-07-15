@@ -1,0 +1,173 @@
+/* ==========================================
+   RESET
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Poppins",sans-serif;
+    background:#F1F5F9;
+    overflow-x:hidden;
+}
+
+/* ==========================================
+   APP
+========================================== */
+
+.app{
+    display:flex;
+    min-height:100vh;
+}
+
+/* ==========================================
+   DASHBOARD
+========================================== */
+
+.dashboard{
+
+    flex:1;
+
+    margin-left:280px;
+
+    padding:30px;
+
+    display:flex;
+    flex-direction:column;
+
+    gap:28px;
+
+    transition:.3s;
+}
+
+/* ==========================================
+   SUMMARY
+========================================== */
+
+.summary-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,minmax(220px,1fr));
+
+    gap:24px;
+}
+
+/* ==========================================
+   CONTENT
+========================================== */
+
+.content-grid{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:24px;
+
+    align-items:start;
+}
+
+/* ==========================================
+   PANELS
+========================================== */
+
+.left-panel,
+.right-panel{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:24px;
+}
+
+/* ==========================================
+   LARGE LAPTOP
+========================================== */
+
+@media (max-width:1400px){
+
+.summary-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media(max-width:1024px){
+
+.dashboard{
+
+margin-left:0;
+
+padding:24px;
+
+}
+
+.content-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.left-panel,
+.right-panel{
+
+width:100%;
+
+}
+
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media(max-width:768px){
+
+.dashboard{
+
+padding:18px;
+
+gap:20px;
+
+}
+
+.summary-grid{
+
+grid-template-columns:1fr;
+
+gap:18px;
+
+}
+
+.content-grid{
+
+gap:18px;
+
+}
+
+}
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media(max-width:480px){
+
+.dashboard{
+
+padding:15px;
+
+}
+
+}

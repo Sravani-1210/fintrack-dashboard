@@ -1,0 +1,253 @@
+/* ===========================
+   Summary Grid
+=========================== */
+
+.summary-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:24px;
+    margin-bottom:10px;
+}
+
+/* ===========================
+   Card
+=========================== */
+
+.summary-card{
+    position:relative;
+    overflow:hidden;
+
+    min-height:185px;
+
+    border-radius:24px;
+    padding:24px;
+
+    color:#fff;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+
+    cursor:pointer;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+
+    transition:all .35s ease;
+}
+
+.summary-card:hover{
+    transform:translateY(-8px) scale(1.02);
+    box-shadow:0 22px 45px rgba(0,0,0,.18);
+}
+
+/* Decorative Circles */
+
+.summary-card::before{
+    content:"";
+    position:absolute;
+
+    width:220px;
+    height:220px;
+
+    border-radius:50%;
+
+    top:-120px;
+    right:-70px;
+
+    background:rgba(255,255,255,.12);
+}
+
+.summary-card::after{
+    content:"";
+    position:absolute;
+
+    width:120px;
+    height:120px;
+
+    border-radius:50%;
+
+    bottom:-55px;
+    right:20px;
+
+    background:rgba(255,255,255,.08);
+}
+
+/* ===========================
+   Gradients
+=========================== */
+
+.balance{
+    background:linear-gradient(135deg,#2563EB,#60A5FA);
+}
+
+.income{
+    background:linear-gradient(135deg,#16A34A,#4ADE80);
+}
+
+.expense{
+    background:linear-gradient(135deg,#DC2626,#FB7185);
+}
+
+.budget{
+    background:linear-gradient(135deg,#7C3AED,#A855F7);
+}
+
+/* ===========================
+   Header
+=========================== */
+
+.card-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:2;
+}
+
+.card-icon{
+
+    width:56px;
+    height:56px;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.18);
+
+    backdrop-filter:blur(10px);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:24px;
+
+    transition:.3s;
+}
+
+.summary-card:hover .card-icon{
+
+    transform:rotate(-8deg) scale(1.08);
+
+    background:rgba(255,255,255,.25);
+}
+
+.menu-icon{
+
+    font-size:18px;
+
+    opacity:.8;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.menu-icon:hover{
+    opacity:1;
+    transform:scale(1.2);
+}
+
+/* ===========================
+   Body
+=========================== */
+
+.card-body{
+    z-index:2;
+}
+
+.card-body h4{
+
+    font-size:15px;
+
+    font-weight:500;
+
+    letter-spacing:.4px;
+
+    opacity:.95;
+}
+
+.card-body h2{
+
+    margin:12px 0 8px;
+
+    font-size:32px;
+
+    font-weight:700;
+
+    letter-spacing:.5px;
+}
+
+.card-body p{
+
+    font-size:14px;
+
+    opacity:.9;
+}
+
+.card-body small{
+
+    display:block;
+
+    margin-top:10px;
+
+    font-size:13px;
+
+    font-weight:500;
+}
+
+/* ===========================
+   Progress
+=========================== */
+
+.progress-bar{
+
+    width:100%;
+
+    height:9px;
+
+    border-radius:30px;
+
+    margin-top:16px;
+
+    overflow:hidden;
+
+    background:rgba(255,255,255,.25);
+}
+
+.progress-fill{
+
+    height:100%;
+
+    border-radius:30px;
+
+    background:#fff;
+
+    transition:width .5s ease;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:1200px){
+
+.summary-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.summary-grid{
+grid-template-columns:1fr;
+}
+
+.summary-card{
+min-height:170px;
+}
+
+.card-body h2{
+font-size:28px;
+}
+
+}

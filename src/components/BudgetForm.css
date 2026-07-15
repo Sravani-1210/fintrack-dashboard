@@ -1,0 +1,184 @@
+/* ===========================
+   Overlay
+=========================== */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(0, 0, 0, 0.55);
+
+  z-index: 1000;
+
+  animation: fadeIn .3s ease;
+}
+
+/* ===========================
+   Popup
+=========================== */
+
+.budget-modal {
+
+  width: 420px;
+  max-width: 90%;
+
+  background: #ffffff;
+
+  padding: 30px;
+
+  border-radius: 20px;
+
+  box-shadow: 0 20px 40px rgba(0,0,0,.25);
+
+  animation: popup .35s ease;
+}
+
+.budget-modal h2 {
+
+  text-align: center;
+
+  color: #1E293B;
+
+  margin-bottom: 25px;
+
+  font-size: 28px;
+}
+
+/* ===========================
+   Form
+=========================== */
+
+.form-group {
+
+  display: flex;
+
+  flex-direction: column;
+
+  margin-bottom: 22px;
+}
+
+.form-group label {
+
+  font-weight: 600;
+
+  color: #334155;
+
+  margin-bottom: 8px;
+}
+
+.budget-modal input {
+
+  width: 100%;
+
+  padding: 14px;
+
+  font-size: 16px;
+
+  border: 2px solid #d1d5db;
+
+  border-radius: 12px;
+
+  outline: none;
+
+  transition: .3s;
+
+  box-sizing: border-box;
+}
+
+.budget-modal input:focus {
+
+  border-color: #2563EB;
+
+  box-shadow: 0 0 8px rgba(37,99,235,.2);
+}
+
+/* ===========================
+   Buttons
+=========================== */
+
+.modal-buttons {
+
+  display: flex;
+
+  gap: 15px;
+}
+
+.save-btn,
+.cancel-btn {
+
+  flex: 1;
+
+  padding: 14px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: .3s;
+}
+
+.save-btn {
+
+  background: linear-gradient(135deg,#2563EB,#3B82F6);
+
+  color: white;
+}
+
+.save-btn:hover {
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 10px 20px rgba(37,99,235,.25);
+}
+
+.cancel-btn {
+
+  background: #EF4444;
+
+  color: white;
+}
+
+.cancel-btn:hover {
+
+  background: #DC2626;
+
+  transform: translateY(-2px);
+}
+
+/* ===========================
+   Animations
+=========================== */
+
+@keyframes popup {
+
+  from {
+    opacity: 0;
+    transform: scale(.85);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeIn {
+
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,286 @@
+/* ==========================================
+   Sidebar
+========================================== */
+
+.sidebar{
+    position:fixed;
+    top:0;
+    left:0;
+
+    width:280px;
+    height:100vh;
+
+    background:#0F172A;
+    color:#fff;
+
+    padding:28px 22px;
+
+    display:flex;
+    flex-direction:column;
+
+    z-index:1000;
+
+    transition:.35s ease;
+}
+
+/* ==========================================
+   Overlay
+========================================== */
+
+.sidebar-overlay{
+
+    position:fixed;
+    inset:0;
+
+    background:rgba(15,23,42,.45);
+
+    backdrop-filter:blur(2px);
+
+    z-index:999;
+}
+
+/* ==========================================
+   Close Button
+========================================== */
+
+.close-sidebar{
+
+    display:none;
+
+    position:absolute;
+
+    top:18px;
+    right:18px;
+
+    width:42px;
+    height:42px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#1E293B;
+
+    color:#fff;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    transition:.3s;
+}
+
+.close-sidebar:hover{
+
+    background:#6366F1;
+}
+
+/* ==========================================
+   Logo
+========================================== */
+
+.logo{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+    margin-bottom:45px;
+}
+
+.logo-icon{
+
+    width:55px;
+    height:55px;
+
+    border-radius:18px;
+
+    background:linear-gradient(135deg,#6366F1,#4F46E5);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:28px;
+
+    box-shadow:0 10px 25px rgba(99,102,241,.35);
+}
+
+.logo h2{
+
+    font-size:24px;
+    margin-bottom:3px;
+}
+
+.logo p{
+
+    color:#94A3B8;
+    font-size:13px;
+}
+
+/* ==========================================
+   Menu
+========================================== */
+
+.menu-section{
+
+    display:flex;
+    flex-direction:column;
+
+    margin-bottom:35px;
+}
+
+.menu-title{
+
+    color:#64748B;
+
+    font-size:12px;
+
+    letter-spacing:2px;
+
+    margin-bottom:15px;
+}
+
+.menu-section a{
+
+    text-decoration:none;
+
+    color:#CBD5E1;
+
+    padding:14px 18px;
+
+    margin-bottom:8px;
+
+    border-radius:14px;
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+    transition:.3s;
+
+    font-size:16px;
+}
+
+.menu-section a:hover{
+
+    background:#1E293B;
+
+    color:#fff;
+
+    transform:translateX(5px);
+}
+
+.menu-section a.active{
+
+    background:linear-gradient(135deg,#6366F1,#4F46E5);
+
+    color:#fff;
+
+    box-shadow:0 10px 20px rgba(99,102,241,.35);
+}
+
+/* ==========================================
+   Profile
+========================================== */
+
+.profile-card{
+
+    margin-top:auto;
+
+    background:#1E293B;
+
+    border-radius:18px;
+
+    padding:16px;
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.avatar{
+
+    width:48px;
+    height:48px;
+
+    border-radius:50%;
+
+    background:#6366F1;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-weight:bold;
+
+    font-size:20px;
+}
+
+.profile-card h4{
+
+    font-size:16px;
+
+    margin-bottom:4px;
+}
+
+.profile-card p{
+
+    color:#94A3B8;
+
+    font-size:13px;
+}
+
+/* ==========================================
+   Tablet & Mobile
+========================================== */
+
+@media(max-width:1024px){
+
+.sidebar{
+
+transform:translateX(-100%);
+
+}
+
+.sidebar.show{
+
+transform:translateX(0);
+
+}
+
+.close-sidebar{
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+}
+
+}
+
+/* ==========================================
+   Desktop
+========================================== */
+
+@media(min-width:1025px){
+
+.sidebar{
+
+transform:none !important;
+
+}
+
+.sidebar-overlay{
+
+display:none;
+
+}
+
+.close-sidebar{
+
+display:none;
+
+}
+
+}
