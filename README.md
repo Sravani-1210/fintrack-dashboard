@@ -1,16 +1,93 @@
-# React + Vite
+# 💰 FinTrack Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive personal finance dashboard built with React and Vite. Manage your income, expenses, budgets, and visualize financial insights through interactive charts.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+👉 https://fintrack-dashboard-pi-nine.vercel.app/
 
-## React Compiler
+## 📂 GitHub Repository
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+👉 https://github.com/Sravani-1210/fintrack-dashboard
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features
+
+- 💳 Add Income & Expense Transactions
+- ✏️ Edit Transactions
+- 🗑 Delete Transactions
+- 🎯 Budget Management
+- 📊 Financial Analytics Dashboard
+- 📈 Monthly Income & Expense Trend
+- 🏷 Expense Category Analysis
+- 💾 Local Storage Persistence
+- 📱 Fully Responsive Design
+- 🎨 Modern Dashboard UI
+
+---
+
+## 🛠 Tech Stack
+
+- React.js
+- Vite
+- JavaScript (ES6)
+- CSS3
+- Chart.js
+- React Icons
+- Local Storage
+- Git & GitHub
+- Vercel
+
+---
+
+## 📸 Screenshots
+
+### Dashboard
+
+(Add dashboard screenshot here)
+
+### Mobile View
+
+(Add mobile screenshot here)
+
+---
+
+## ⚙ Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/Sravani-1210/fintrack-dashboard.git
+```
+
+Go to the project
+
+```bash
+cd fintrack-dashboard
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run the project
+
+```bash
+npm run dev
+```
+
+---
+
+## 👩‍💻 Developer
+
+**Sravani**
+
+GitHub:
+https://github.com/Sravani-1210
+
+---
+
+## ⭐ If you like this project, give it a star.****
